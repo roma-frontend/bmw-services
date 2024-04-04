@@ -1,0 +1,52 @@
+.main__section {
+  padding: 100px 0 100px;
+  background: linear-gradient(
+    to left bottom,
+    #f2bddb,
+    #e6bce1,
+    #d9bce5,
+    #cabde8,
+    #bbbde9,
+    #aec0ea,
+    #a3c2e9,
+    #98c4e6,
+    #90c8e2,
+    #8dcbdb,
+    #8fcdd4,
+    #94cfcb
+  );
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
+    background-image: url("../../../../public/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main__title {
+    text-align: center;
+  }
+}
+
+.content__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px 20px 0 100px;
+  z-index: 1;
+}

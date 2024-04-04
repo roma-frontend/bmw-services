@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.root {
+    background: linear-gradient(to left bottom, #f2bddb, #e6bce1, #d9bce5, #cabde8, #bbbde9, #aec0ea, #a3c2e9, #98c4e6, #90c8e2, #8dcbdb, #8fcdd4, #94cfcb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form {
+    padding: 100px 0 30px;
+    width: 80%;
+    position: relative;
+    z-index: 0;
+}
+
+.formBox{
+    max-width: 600px;
+}
+
+.form .MuiBox-root {
+    background: rgba(255, 255, 255, 0.825);
+    backdrop-filter: blur(300px);
+}
+.form .inicitingText {
+    color: #1900d5;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.form .inicitingText:hover {
+    text-decoration: underline;
+}

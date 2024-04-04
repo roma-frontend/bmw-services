@@ -1,0 +1,134 @@
+
+.products-wrapper {
+  width: 100%;
+  min-height: 500px;
+  overflow: auto !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.one-product {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  transition: all 0.4s ease;
+  max-width: 400px;
+  margin: 20px;
+  box-shadow: 0 0 13px #b9b9b9;
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
+
+  .images {
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+
+  &:hover {
+    .icons {
+      opacity: 1;
+    }
+  }
+}
+
+.one-slide {
+  position: relative;
+
+  .icons {
+    position: absolute;
+    display: flex;
+    right: -100%;
+    top: -100%;
+    font-size: 20px;
+    transition: top 0.4s linear, right 0.4s linear;
+    padding: 5px;
+    background-color: #00000047;
+    box-shadow: 0 0 25px #0000004a;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+
+    .button__box {
+      width: 60px;
+      height: 60px;
+      transition: background ease 250ms;
+      padding: 0;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.04);
+        border-radius: 50%;
+      }
+    }
+
+    .eye {
+      cursor: pointer;
+      padding: 5px;
+      width: 1.3rem;
+      height: 1.3rem;
+
+      path {
+        fill: #3f51b5;
+        transition: fill ease 0.35s;
+      }
+      
+      &:hover { 
+        fill: #283cab;
+        transition: fill ease 0.25s;
+      }
+    }
+
+    .heart {
+      cursor: pointer;
+      padding: 5px;
+      width: 1.3rem;
+      height: 1.3rem;
+
+      path {
+        transition: fill ease 0.35s;
+      }
+      
+      &:hover path{ 
+        fill: #dc0e0e;
+      }
+    }
+    .deleteButton {
+      cursor: pointer;
+      padding: 5px;
+      width: 1.3rem;
+      height: 1.3rem;
+
+      path {
+        fill: #f44336;
+        transition: fill ease 0.35s;
+      }
+
+      &:hover path{ 
+        fill: #b33d34;
+      }
+    }
+  }
+
+  &:hover {
+    .icons {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.MuiDialogContent-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-primary {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fa-heart.liked {
+  color: red;
+}

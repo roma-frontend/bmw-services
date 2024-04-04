@@ -1,0 +1,30 @@
+.section__blog-post {
+    background: linear-gradient(
+    to left bottom,
+    #f2bddb,
+    #e6bce1,
+    #d9bce5,
+    #cabde8,
+    #bbbde9,
+    #aec0ea,
+    #a3c2e9,
+    #98c4e6,
+    #90c8e2,
+    #8dcbdb,
+    #8fcdd4,
+    #94cfcb
+  );
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 0;
+  overflow: hidden;
+}
+
+.post__image {
+  transition: all;
+
+  &:hover {
+    mix-blend-mode: multiply;
+  }
+}

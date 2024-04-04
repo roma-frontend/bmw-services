@@ -1,0 +1,36 @@
+
+
+.favorite__section {
+    background: linear-gradient(
+    to left bottom,
+    #f2bddb,
+    #e6bce1,
+    #d9bce5,
+    #cabde8,
+    #bbbde9,
+    #aec0ea,
+    #a3c2e9,
+    #98c4e6,
+    #90c8e2,
+    #8dcbdb,
+    #8fcdd4,
+    #94cfcb
+  );
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+
+  .slider-container {
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+}
+

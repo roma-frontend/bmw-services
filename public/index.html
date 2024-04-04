@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1" />
+  <meta name="theme-color"
+    content="#000000" />
+  <meta name="description"
+    content="Web site for BMW services" />
+  <title>Bmw Services</title>
+
+  <link rel="manifest"
+    href="../manifest.json">
+  <link rel="icon"
+    href="<%= assetPrefix %>/favicon.ico" />
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com"
+    crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lobster&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script async
+    src="https://www.googletagmanager.com/gtag/js?id=G-FY9CLQNEL6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FY9CLQNEL6');
+  </script>
+  <script type="module"
+    src="dist/main.js"></script>
+  <script nomodule
+    src="dist/main.legacy.js"></script>
+</body>
+
+</html>

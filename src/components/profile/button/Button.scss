@@ -1,0 +1,18 @@
+.homeButton {
+    background-image: linear-gradient(to left bottom, #c0deff, #c1dfff, #c1e1ff, #c2e2ff, #c3e3ff, #c6e3ff, #c9e3ff, #cce3ff, #d3e1ff, #dbdfff, #e5ddff, #efdaff);
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    box-shadow: none;
+    transition: all ease 250ms;
+
+    span {
+      color: #3D5D8C;
+    }
+
+    &:hover {
+      box-shadow: 3px 3px 5px #697fec7d;
+    }
+  }

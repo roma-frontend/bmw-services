@@ -1,0 +1,77 @@
+{
+  "name": "bmw-p-main",
+  "version": "0.1.0",
+  "homepage": "https://roma.frontend.github.io/bmw-services",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "aos": "^2.3.4",
+    "axios": "^1.4.0",
+    "chart": "^0.1.2",
+    "chart.js": "^4.3.0",
+    "clsx": "^1.2.1",
+    "css-select": "^5.1.0",
+    "fa": "^1.0.1",
+    "formik": "^2.4.1",
+    "node-sass": "^9.0.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.14.0",
+    "react-spring": "^9.7.1",
+    "react-toastify": "^9.1.3",
+    "recharts": "^2.6.2",
+    "redux": "^4.2.1",
+    "swiper": "^9.3.2",
+    "yup": "^1.1.1"
+  },
+  "scripts": {
+    "start": "rsbuild dev",
+    "build": "rsbuild build",
+    "test": "react-scripts test",
+    "eject": "rsbuild preview",
+    "clean": "rm -rf build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.5.7",
+    "@rsbuild/plugin-react": "^0.5.7",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass-loader": "^13.3.1",
+    "style-loader": "^3.3.3"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/roma-frontend/bmw-p-main.git",
+  "author": "roma-frontend <romangulanyan@gmail.com>",
+  "license": "MIT"
+}

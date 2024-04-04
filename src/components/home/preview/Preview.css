@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --clr: #b7c9e5;
+  --index: calc(1vw + 1vh);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #c4c4c4 #f5f5f5;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(
+      to left bottom,
+      #f6e2ed,
+      #f6e8f2,
+      #f6edf7,
+      #f8f3fa,
+      #faf8fd,
+      #faf8fe,
+      #faf7fe,
+      #faf7ff,
+      #f8f0ff,
+      #f6e9ff,
+      #f6e2ff,
+      #f7daff
+    );
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    transition: 350ms ease-in-out;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #f6dbcf;
+  }
+}
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+p {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.home__section {
+  position: relative;
+  background: linear-gradient(
+    to left bottom,
+    #f2bddb,
+    #e6bce1,
+    #d9bce5,
+    #cabde8,
+    #bbbde9,
+    #aec0ea,
+    #a3c2e9,
+    #98c4e6,
+    #90c8e2,
+    #8dcbdb,
+    #8fcdd4,
+    #94cfcb
+  );
+  min-height: 100vh;
+  padding: 150px 0 100px;
+}
+
+.home__title {
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1140px;
+  display: flex;
+  padding: 0 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.card {
+  width: 350px;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+  transition-delay: 0.35s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(0.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  border-radius: 16px;
+  align-content: center;
+}
+
+.card__front {
+  background-color: hsla(197, 59%, 37%, 0.851);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #eae1e1;
+  box-shadow: 2px 4px 27px hsla(233, 44%, 38%, 1);
+}
+
+.card__front::before {
+  content: "";
+  position: absolute;
+  background: hsla(310, 22%, 56%, 0.4);
+  opacity: 0.8;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 16px;
+}
+
+.card__title {
+  font-size: 2.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+  color: #cecfd9;
+  -webkit-text-stroke: 2px #78301eab;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  opacity: 0.7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.card__back {
+  position: fixed;
+  background-color: hsl(197deg 100% 17% / 90%);
+  transform: rotateY(0.5turn);
+  color: #eae5e5;
+  background-size: cover;
+  filter: drop-shadow(2px 4px 27px hsla(233, 44%, 38%, 1));
+}
+.card__front:hover ~ .card__back {
+  animation: moveBackground 3s ease-in-out forwards;
+}
+
+.card__back .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(197deg 100% 17% / 80%);
+  border-radius: 16px;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+@media(max-width: 991px) {
+  .container {
+  flex-wrap: wrap;
+  }
+}
