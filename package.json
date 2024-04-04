@@ -1,7 +1,7 @@
 {
   "name": "bmw-p-main",
   "version": "0.1.0",
-  "homepage": "https://roma.frontend.github.io/bmw-services",
+  "homepage": "https://roma.frontend/github.io/bmw-services",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",

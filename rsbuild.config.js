@@ -11,7 +11,4 @@ export default defineConfig({
       root: 'build',
     },
   },
-  source: {
-    tsconfigPath: './tsconfig.custom.json',
-  },
 });
